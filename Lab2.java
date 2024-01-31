@@ -9,6 +9,9 @@
 //            Reminder: you should never take code from the Internet or another person
 
 import java.util.Scanner;
+import java.text.DecimalFormat;
+import java.util.Random;
+
 
 class Lab2 {
     public static void main(String[] args) {
@@ -21,6 +24,17 @@ class Lab2 {
         System.out.print("What's your name? ");
 
         String customerName = input.nextLine();
+
+        System.out.println("Here are the ticket:");
+        Random rand = new Random();
+        for(int i=0; i<10; i++) {
+
+            for(int j=0; j<6; j++) {
+                System.out.print(rand.nextInt(99) + " " );
+            }
+            System.out.println();
+        }
+
 
 
     }
